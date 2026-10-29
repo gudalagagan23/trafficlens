@@ -1,0 +1,2104 @@
+{
+  "types": {
+    "human": {
+      "sessions": 4915,
+      "metrics": {
+        "home": {
+          "visits": 3093,
+          "entries": 1968,
+          "exits": 678,
+          "exit_rate": 0.2192,
+          "pagerank": 0.11866,
+          "betweenness": 0.35606,
+          "community": 0
+        },
+        "products": {
+          "visits": 5004,
+          "entries": 632,
+          "exits": 636,
+          "exit_rate": 0.1271,
+          "pagerank": 0.17578,
+          "betweenness": 0.48485,
+          "community": 0
+        },
+        "product_detail": {
+          "visits": 9202,
+          "entries": 946,
+          "exits": 922,
+          "exit_rate": 0.1002,
+          "pagerank": 0.30945,
+          "betweenness": 0.57576,
+          "community": 2
+        },
+        "deals": {
+          "visits": 1121,
+          "entries": 350,
+          "exits": 380,
+          "exit_rate": 0.339,
+          "pagerank": 0.03978,
+          "betweenness": 0.0,
+          "community": 0
+        },
+        "blog": {
+          "visits": 1363,
+          "entries": 588,
+          "exits": 453,
+          "exit_rate": 0.3324,
+          "pagerank": 0.04698,
+          "betweenness": 0.0,
+          "community": 0
+        },
+        "about": {
+          "visits": 243,
+          "entries": 0,
+          "exits": 53,
+          "exit_rate": 0.2181,
+          "pagerank": 0.01015,
+          "betweenness": 0.08333,
+          "community": 0
+        },
+        "compare": {
+          "visits": 3933,
+          "entries": 0,
+          "exits": 80,
+          "exit_rate": 0.0203,
+          "pagerank": 0.12494,
+          "betweenness": 0.0,
+          "community": 2
+        },
+        "size_guide": {
+          "visits": 639,
+          "entries": 0,
+          "exits": 454,
+          "exit_rate": 0.7105,
+          "pagerank": 0.0203,
+          "betweenness": 0.0,
+          "community": 2
+        },
+        "reviews": {
+          "visits": 494,
+          "entries": 431,
+          "exits": 74,
+          "exit_rate": 0.1498,
+          "pagerank": 0.01601,
+          "betweenness": 0.0,
+          "community": 1
+        },
+        "cart": {
+          "visits": 1516,
+          "entries": 0,
+          "exits": 450,
+          "exit_rate": 0.2968,
+          "pagerank": 0.05532,
+          "betweenness": 0.28788,
+          "community": 1
+        },
+        "shipping": {
+          "visits": 923,
+          "entries": 0,
+          "exits": 472,
+          "exit_rate": 0.5114,
+          "pagerank": 0.04119,
+          "betweenness": 0.15909,
+          "community": 1
+        },
+        "payment": {
+          "visits": 297,
+          "entries": 0,
+          "exits": 25,
+          "exit_rate": 0.0842,
+          "pagerank": 0.02306,
+          "betweenness": 0.08333,
+          "community": 1
+        },
+        "confirmation": {
+          "visits": 255,
+          "entries": 0,
+          "exits": 238,
+          "exit_rate": 0.9333,
+          "pagerank": 0.01837,
+          "betweenness": 0.07576,
+          "community": 1
+        }
+      },
+      "path_lengths": {
+        "converters": 253,
+        "median_actual_steps": 8.0,
+        "median_shortest_steps": 5.0
+      },
+      "edges": [
+        {
+          "source": "home",
+          "target": "deals",
+          "weight": 360
+        },
+        {
+          "source": "home",
+          "target": "about",
+          "weight": 243
+        },
+        {
+          "source": "home",
+          "target": "product_detail",
+          "weight": 506
+        },
+        {
+          "source": "home",
+          "target": "products",
+          "weight": 972
+        },
+        {
+          "source": "home",
+          "target": "blog",
+          "weight": 334
+        },
+        {
+          "source": "products",
+          "target": "product_detail",
+          "weight": 2892
+        },
+        {
+          "source": "products",
+          "target": "deals",
+          "weight": 411
+        },
+        {
+          "source": "products",
+          "target": "home",
+          "weight": 624
+        },
+        {
+          "source": "products",
+          "target": "blog",
+          "weight": 441
+        },
+        {
+          "source": "product_detail",
+          "target": "products",
+          "weight": 2502
+        },
+        {
+          "source": "product_detail",
+          "target": "compare",
+          "weight": 3933
+        },
+        {
+          "source": "product_detail",
+          "target": "size_guide",
+          "weight": 639
+        },
+        {
+          "source": "product_detail",
+          "target": "cart",
+          "weight": 1206
+        },
+        {
+          "source": "deals",
+          "target": "products",
+          "weight": 158
+        },
+        {
+          "source": "deals",
+          "target": "home",
+          "weight": 120
+        },
+        {
+          "source": "deals",
+          "target": "product_detail",
+          "weight": 463
+        },
+        {
+          "source": "blog",
+          "target": "home",
+          "weight": 237
+        },
+        {
+          "source": "blog",
+          "target": "product_detail",
+          "weight": 328
+        },
+        {
+          "source": "blog",
+          "target": "products",
+          "weight": 345
+        },
+        {
+          "source": "about",
+          "target": "reviews",
+          "weight": 63
+        },
+        {
+          "source": "about",
+          "target": "home",
+          "weight": 127
+        },
+        {
+          "source": "compare",
+          "target": "product_detail",
+          "weight": 3727
+        },
+        {
+          "source": "compare",
+          "target": "products",
+          "weight": 126
+        },
+        {
+          "source": "size_guide",
+          "target": "product_detail",
+          "weight": 185
+        },
+        {
+          "source": "reviews",
+          "target": "cart",
+          "weight": 156
+        },
+        {
+          "source": "reviews",
+          "target": "product_detail",
+          "weight": 155
+        },
+        {
+          "source": "reviews",
+          "target": "products",
+          "weight": 109
+        },
+        {
+          "source": "cart",
+          "target": "shipping",
+          "weight": 906
+        },
+        {
+          "source": "cart",
+          "target": "products",
+          "weight": 160
+        },
+        {
+          "source": "shipping",
+          "target": "cart",
+          "weight": 154
+        },
+        {
+          "source": "shipping",
+          "target": "payment",
+          "weight": 297
+        },
+        {
+          "source": "payment",
+          "target": "shipping",
+          "weight": 17
+        },
+        {
+          "source": "payment",
+          "target": "confirmation",
+          "weight": 255
+        },
+        {
+          "source": "confirmation",
+          "target": "home",
+          "weight": 17
+        }
+      ],
+      "funnel": {
+        "reached": {
+          "cart": 1303,
+          "shipping": 811,
+          "payment": 289,
+          "confirmation": 253
+        },
+        "steps": [
+          {
+            "from_step": "cart",
+            "to_step": "shipping",
+            "reached_from": 1303,
+            "reached_to": 811,
+            "continue_rate": 0.6224
+          },
+          {
+            "from_step": "shipping",
+            "to_step": "payment",
+            "reached_from": 811,
+            "reached_to": 289,
+            "continue_rate": 0.3564
+          },
+          {
+            "from_step": "payment",
+            "to_step": "confirmation",
+            "reached_from": 289,
+            "reached_to": 253,
+            "continue_rate": 0.8754
+          }
+        ]
+      },
+      "bounce_rate": 0.2527,
+      "mean_pages": 5.71,
+      "conversion": 0.0515
+    },
+    "ai_agent": {
+      "sessions": 535,
+      "metrics": {
+        "home": {
+          "visits": 163,
+          "entries": 163,
+          "exits": 0,
+          "exit_rate": 0.0,
+          "pagerank": 0.06168,
+          "betweenness": 0.0,
+          "community": 0
+        },
+        "products": {
+          "visits": 901,
+          "entries": 142,
+          "exits": 0,
+          "exit_rate": 0.0,
+          "pagerank": 0.28708,
+          "betweenness": 0.07576,
+          "community": 0
+        },
+        "product_detail": {
+          "visits": 1102,
+          "entries": 201,
+          "exits": 203,
+          "exit_rate": 0.1842,
+          "pagerank": 0.32008,
+          "betweenness": 0.09091,
+          "community": 0
+        },
+        "deals": {
+          "visits": 29,
+          "entries": 29,
+          "exits": 0,
+          "exit_rate": 0.0,
+          "pagerank": 0.01097,
+          "betweenness": 0.0,
+          "community": 0
+        },
+        "blog": {
+          "visits": 0,
+          "entries": 0,
+          "exits": 0,
+          "exit_rate": 0.0,
+          "pagerank": 0.0,
+          "betweenness": 0.0,
+          "community": -1
+        },
+        "about": {
+          "visits": 0,
+          "entries": 0,
+          "exits": 0,
+          "exit_rate": 0.0,
+          "pagerank": 0.0,
+          "betweenness": 0.0,
+          "community": -1
+        },
+        "compare": {
+          "visits": 0,
+          "entries": 0,
+          "exits": 0,
+          "exit_rate": 0.0,
+          "pagerank": 0.0,
+          "betweenness": 0.0,
+          "community": -1
+        },
+        "size_guide": {
+          "visits": 0,
+          "entries": 0,
+          "exits": 0,
+          "exit_rate": 0.0,
+          "pagerank": 0.0,
+          "betweenness": 0.0,
+          "community": -1
+        },
+        "reviews": {
+          "visits": 0,
+          "entries": 0,
+          "exits": 0,
+          "exit_rate": 0.0,
+          "pagerank": 0.0,
+          "betweenness": 0.0,
+          "community": -1
+        },
+        "cart": {
+          "visits": 332,
+          "entries": 0,
+          "exits": 29,
+          "exit_rate": 0.0873,
+          "pagerank": 0.10047,
+          "betweenness": 0.09091,
+          "community": 1
+        },
+        "shipping": {
+          "visits": 303,
+          "entries": 0,
+          "exits": 44,
+          "exit_rate": 0.1452,
+          "pagerank": 0.0854,
+          "betweenness": 0.07576,
+          "community": 1
+        },
+        "payment": {
+          "visits": 259,
+          "entries": 0,
+          "exits": 247,
+          "exit_rate": 0.9537,
+          "pagerank": 0.07259,
+          "betweenness": 0.04545,
+          "community": 1
+        },
+        "confirmation": {
+          "visits": 12,
+          "entries": 0,
+          "exits": 12,
+          "exit_rate": 1.0,
+          "pagerank": 0.06171,
+          "betweenness": 0.0,
+          "community": 1
+        }
+      },
+      "path_lengths": {
+        "converters": 12,
+        "median_actual_steps": 7.5,
+        "median_shortest_steps": 5.0
+      },
+      "edges": [
+        {
+          "source": "home",
+          "target": "products",
+          "weight": 163
+        },
+        {
+          "source": "products",
+          "target": "product_detail",
+          "weight": 901
+        },
+        {
+          "source": "product_detail",
+          "target": "products",
+          "weight": 567
+        },
+        {
+          "source": "product_detail",
+          "target": "cart",
+          "weight": 332
+        },
+        {
+          "source": "deals",
+          "target": "products",
+          "weight": 29
+        },
+        {
+          "source": "cart",
+          "target": "shipping",
+          "weight": 303
+        },
+        {
+          "source": "shipping",
+          "target": "payment",
+          "weight": 259
+        },
+        {
+          "source": "payment",
+          "target": "confirmation",
+          "weight": 12
+        }
+      ],
+      "funnel": {
+        "reached": {
+          "cart": 332,
+          "shipping": 303,
+          "payment": 259,
+          "confirmation": 12
+        },
+        "steps": [
+          {
+            "from_step": "cart",
+            "to_step": "shipping",
+            "reached_from": 332,
+            "reached_to": 303,
+            "continue_rate": 0.9127
+          },
+          {
+            "from_step": "shipping",
+            "to_step": "payment",
+            "reached_from": 303,
+            "reached_to": 259,
+            "continue_rate": 0.8548
+          },
+          {
+            "from_step": "payment",
+            "to_step": "confirmation",
+            "reached_from": 259,
+            "reached_to": 12,
+            "continue_rate": 0.0463
+          }
+        ]
+      },
+      "bounce_rate": 0.0336,
+      "mean_pages": 5.8,
+      "conversion": 0.0224
+    },
+    "old_bot": {
+      "sessions": 1765,
+      "metrics": {
+        "home": {
+          "visits": 1937,
+          "entries": 1352,
+          "exits": 239,
+          "exit_rate": 0.1234,
+          "pagerank": 0.14,
+          "betweenness": 0.0,
+          "community": 0
+        },
+        "products": {
+          "visits": 2519,
+          "entries": 222,
+          "exits": 301,
+          "exit_rate": 0.1195,
+          "pagerank": 0.14564,
+          "betweenness": 0.19697,
+          "community": 0
+        },
+        "product_detail": {
+          "visits": 10216,
+          "entries": 93,
+          "exits": 820,
+          "exit_rate": 0.0803,
+          "pagerank": 0.44633,
+          "betweenness": 0.75758,
+          "community": 2
+        },
+        "deals": {
+          "visits": 1182,
+          "entries": 17,
+          "exits": 92,
+          "exit_rate": 0.0778,
+          "pagerank": 0.06013,
+          "betweenness": 0.0,
+          "community": 1
+        },
+        "blog": {
+          "visits": 965,
+          "entries": 53,
+          "exits": 56,
+          "exit_rate": 0.058,
+          "pagerank": 0.04493,
+          "betweenness": 0.0,
+          "community": 1
+        },
+        "about": {
+          "visits": 842,
+          "entries": 0,
+          "exits": 46,
+          "exit_rate": 0.0546,
+          "pagerank": 0.03682,
+          "betweenness": 0.0,
+          "community": 1
+        },
+        "compare": {
+          "visits": 870,
+          "entries": 0,
+          "exits": 39,
+          "exit_rate": 0.0448,
+          "pagerank": 0.03724,
+          "betweenness": 0.0,
+          "community": 1
+        },
+        "size_guide": {
+          "visits": 870,
+          "entries": 0,
+          "exits": 54,
+          "exit_rate": 0.0621,
+          "pagerank": 0.03718,
+          "betweenness": 0.0,
+          "community": 1
+        },
+        "reviews": {
+          "visits": 861,
+          "entries": 28,
+          "exits": 28,
+          "exit_rate": 0.0325,
+          "pagerank": 0.03805,
+          "betweenness": 0.0,
+          "community": 1
+        },
+        "cart": {
+          "visits": 284,
+          "entries": 0,
+          "exits": 72,
+          "exit_rate": 0.2535,
+          "pagerank": 0.01151,
+          "betweenness": 0.27273,
+          "community": 0
+        },
+        "shipping": {
+          "visits": 21,
+          "entries": 0,
+          "exits": 7,
+          "exit_rate": 0.3333,
+          "pagerank": 0.00097,
+          "betweenness": 0.15152,
+          "community": 0
+        },
+        "payment": {
+          "visits": 11,
+          "entries": 0,
+          "exits": 9,
+          "exit_rate": 0.8182,
+          "pagerank": 0.00065,
+          "betweenness": 0.08333,
+          "community": 0
+        },
+        "confirmation": {
+          "visits": 2,
+          "entries": 0,
+          "exits": 2,
+          "exit_rate": 1.0,
+          "pagerank": 0.00055,
+          "betweenness": 0.0,
+          "community": 0
+        }
+      },
+      "path_lengths": {
+        "converters": 2,
+        "median_actual_steps": 4.5,
+        "median_shortest_steps": 4.0
+      },
+      "edges": [
+        {
+          "source": "home",
+          "target": "products",
+          "weight": 1061
+        },
+        {
+          "source": "home",
+          "target": "blog",
+          "weight": 58
+        },
+        {
+          "source": "home",
+          "target": "deals",
+          "weight": 322
+        },
+        {
+          "source": "home",
+          "target": "about",
+          "weight": 59
+        },
+        {
+          "source": "home",
+          "target": "product_detail",
+          "weight": 123
+        },
+        {
+          "source": "home",
+          "target": "reviews",
+          "weight": 26
+        },
+        {
+          "source": "home",
+          "target": "compare",
+          "weight": 26
+        },
+        {
+          "source": "home",
+          "target": "size_guide",
+          "weight": 23
+        },
+        {
+          "source": "products",
+          "target": "product_detail",
+          "weight": 1554
+        },
+        {
+          "source": "products",
+          "target": "home",
+          "weight": 66
+        },
+        {
+          "source": "products",
+          "target": "about",
+          "weight": 66
+        },
+        {
+          "source": "products",
+          "target": "size_guide",
+          "weight": 87
+        },
+        {
+          "source": "products",
+          "target": "deals",
+          "weight": 126
+        },
+        {
+          "source": "products",
+          "target": "reviews",
+          "weight": 68
+        },
+        {
+          "source": "products",
+          "target": "compare",
+          "weight": 72
+        },
+        {
+          "source": "products",
+          "target": "products",
+          "weight": 66
+        },
+        {
+          "source": "products",
+          "target": "blog",
+          "weight": 113
+        },
+        {
+          "source": "product_detail",
+          "target": "products",
+          "weight": 434
+        },
+        {
+          "source": "product_detail",
+          "target": "compare",
+          "weight": 305
+        },
+        {
+          "source": "product_detail",
+          "target": "size_guide",
+          "weight": 292
+        },
+        {
+          "source": "product_detail",
+          "target": "product_detail",
+          "weight": 6671
+        },
+        {
+          "source": "product_detail",
+          "target": "home",
+          "weight": 474
+        },
+        {
+          "source": "product_detail",
+          "target": "cart",
+          "weight": 276
+        },
+        {
+          "source": "product_detail",
+          "target": "deals",
+          "weight": 227
+        },
+        {
+          "source": "product_detail",
+          "target": "blog",
+          "weight": 250
+        },
+        {
+          "source": "product_detail",
+          "target": "reviews",
+          "weight": 237
+        },
+        {
+          "source": "product_detail",
+          "target": "about",
+          "weight": 230
+        },
+        {
+          "source": "deals",
+          "target": "product_detail",
+          "weight": 505
+        },
+        {
+          "source": "deals",
+          "target": "products",
+          "weight": 105
+        },
+        {
+          "source": "deals",
+          "target": "compare",
+          "weight": 86
+        },
+        {
+          "source": "deals",
+          "target": "blog",
+          "weight": 80
+        },
+        {
+          "source": "deals",
+          "target": "reviews",
+          "weight": 88
+        },
+        {
+          "source": "deals",
+          "target": "deals",
+          "weight": 78
+        },
+        {
+          "source": "deals",
+          "target": "about",
+          "weight": 70
+        },
+        {
+          "source": "deals",
+          "target": "home",
+          "weight": 12
+        },
+        {
+          "source": "deals",
+          "target": "size_guide",
+          "weight": 66
+        },
+        {
+          "source": "blog",
+          "target": "home",
+          "weight": 21
+        },
+        {
+          "source": "blog",
+          "target": "product_detail",
+          "weight": 256
+        },
+        {
+          "source": "blog",
+          "target": "blog",
+          "weight": 85
+        },
+        {
+          "source": "blog",
+          "target": "about",
+          "weight": 86
+        },
+        {
+          "source": "blog",
+          "target": "deals",
+          "weight": 91
+        },
+        {
+          "source": "blog",
+          "target": "reviews",
+          "weight": 94
+        },
+        {
+          "source": "blog",
+          "target": "products",
+          "weight": 110
+        },
+        {
+          "source": "blog",
+          "target": "compare",
+          "weight": 86
+        },
+        {
+          "source": "blog",
+          "target": "size_guide",
+          "weight": 80
+        },
+        {
+          "source": "about",
+          "target": "deals",
+          "weight": 76
+        },
+        {
+          "source": "about",
+          "target": "product_detail",
+          "weight": 227
+        },
+        {
+          "source": "about",
+          "target": "size_guide",
+          "weight": 80
+        },
+        {
+          "source": "about",
+          "target": "compare",
+          "weight": 84
+        },
+        {
+          "source": "about",
+          "target": "about",
+          "weight": 75
+        },
+        {
+          "source": "about",
+          "target": "products",
+          "weight": 84
+        },
+        {
+          "source": "about",
+          "target": "reviews",
+          "weight": 79
+        },
+        {
+          "source": "about",
+          "target": "blog",
+          "weight": 79
+        },
+        {
+          "source": "about",
+          "target": "home",
+          "weight": 12
+        },
+        {
+          "source": "compare",
+          "target": "product_detail",
+          "weight": 268
+        },
+        {
+          "source": "compare",
+          "target": "deals",
+          "weight": 79
+        },
+        {
+          "source": "compare",
+          "target": "reviews",
+          "weight": 79
+        },
+        {
+          "source": "compare",
+          "target": "compare",
+          "weight": 65
+        },
+        {
+          "source": "compare",
+          "target": "size_guide",
+          "weight": 85
+        },
+        {
+          "source": "compare",
+          "target": "about",
+          "weight": 82
+        },
+        {
+          "source": "compare",
+          "target": "products",
+          "weight": 85
+        },
+        {
+          "source": "compare",
+          "target": "blog",
+          "weight": 88
+        },
+        {
+          "source": "size_guide",
+          "target": "product_detail",
+          "weight": 249
+        },
+        {
+          "source": "size_guide",
+          "target": "blog",
+          "weight": 80
+        },
+        {
+          "source": "size_guide",
+          "target": "size_guide",
+          "weight": 90
+        },
+        {
+          "source": "size_guide",
+          "target": "about",
+          "weight": 90
+        },
+        {
+          "source": "size_guide",
+          "target": "deals",
+          "weight": 91
+        },
+        {
+          "source": "size_guide",
+          "target": "products",
+          "weight": 64
+        },
+        {
+          "source": "size_guide",
+          "target": "reviews",
+          "weight": 84
+        },
+        {
+          "source": "size_guide",
+          "target": "compare",
+          "weight": 68
+        },
+        {
+          "source": "reviews",
+          "target": "product_detail",
+          "weight": 270
+        },
+        {
+          "source": "reviews",
+          "target": "deals",
+          "weight": 75
+        },
+        {
+          "source": "reviews",
+          "target": "products",
+          "weight": 97
+        },
+        {
+          "source": "reviews",
+          "target": "blog",
+          "weight": 79
+        },
+        {
+          "source": "reviews",
+          "target": "about",
+          "weight": 84
+        },
+        {
+          "source": "reviews",
+          "target": "size_guide",
+          "weight": 67
+        },
+        {
+          "source": "reviews",
+          "target": "compare",
+          "weight": 78
+        },
+        {
+          "source": "reviews",
+          "target": "reviews",
+          "weight": 78
+        },
+        {
+          "source": "reviews",
+          "target": "cart",
+          "weight": 5
+        },
+        {
+          "source": "cart",
+          "target": "products",
+          "weight": 191
+        },
+        {
+          "source": "cart",
+          "target": "shipping",
+          "weight": 21
+        },
+        {
+          "source": "shipping",
+          "target": "cart",
+          "weight": 3
+        },
+        {
+          "source": "shipping",
+          "target": "payment",
+          "weight": 11
+        },
+        {
+          "source": "payment",
+          "target": "confirmation",
+          "weight": 2
+        }
+      ],
+      "funnel": {
+        "reached": {
+          "cart": 165,
+          "shipping": 19,
+          "payment": 11,
+          "confirmation": 2
+        },
+        "steps": [
+          {
+            "from_step": "cart",
+            "to_step": "shipping",
+            "reached_from": 165,
+            "reached_to": 19,
+            "continue_rate": 0.1152
+          },
+          {
+            "from_step": "shipping",
+            "to_step": "payment",
+            "reached_from": 19,
+            "reached_to": 11,
+            "continue_rate": 0.5789
+          },
+          {
+            "from_step": "payment",
+            "to_step": "confirmation",
+            "reached_from": 11,
+            "reached_to": 2,
+            "continue_rate": 0.1818
+          }
+        ]
+      },
+      "bounce_rate": 0.0703,
+      "mean_pages": 11.66,
+      "conversion": 0.0011
+    },
+    "everyone": {
+      "sessions": 7562,
+      "metrics": {
+        "home": {
+          "visits": 5323,
+          "entries": 3571,
+          "exits": 937,
+          "exit_rate": 0.176,
+          "pagerank": 0.1139,
+          "betweenness": 0.15152,
+          "community": 0
+        },
+        "products": {
+          "visits": 9054,
+          "entries": 1128,
+          "exits": 1014,
+          "exit_rate": 0.112,
+          "pagerank": 0.16988,
+          "betweenness": 0.53788,
+          "community": 0
+        },
+        "product_detail": {
+          "visits": 20806,
+          "entries": 1291,
+          "exits": 1990,
+          "exit_rate": 0.0956,
+          "pagerank": 0.35865,
+          "betweenness": 0.68939,
+          "community": 2
+        },
+        "deals": {
+          "visits": 2375,
+          "entries": 409,
+          "exits": 488,
+          "exit_rate": 0.2055,
+          "pagerank": 0.04645,
+          "betweenness": 0.0,
+          "community": 0
+        },
+        "blog": {
+          "visits": 2811,
+          "entries": 674,
+          "exits": 573,
+          "exit_rate": 0.2038,
+          "pagerank": 0.05345,
+          "betweenness": 0.06061,
+          "community": 0
+        },
+        "about": {
+          "visits": 1484,
+          "entries": 0,
+          "exits": 145,
+          "exit_rate": 0.0977,
+          "pagerank": 0.02893,
+          "betweenness": 0.0,
+          "community": 0
+        },
+        "compare": {
+          "visits": 4897,
+          "entries": 0,
+          "exits": 121,
+          "exit_rate": 0.0247,
+          "pagerank": 0.08097,
+          "betweenness": 0.0,
+          "community": 2
+        },
+        "size_guide": {
+          "visits": 1542,
+          "entries": 0,
+          "exits": 531,
+          "exit_rate": 0.3444,
+          "pagerank": 0.02657,
+          "betweenness": 0.0,
+          "community": 3
+        },
+        "reviews": {
+          "visits": 1393,
+          "entries": 489,
+          "exits": 113,
+          "exit_rate": 0.0811,
+          "pagerank": 0.02621,
+          "betweenness": 0.0,
+          "community": 0
+        },
+        "cart": {
+          "visits": 2187,
+          "entries": 0,
+          "exits": 564,
+          "exit_rate": 0.2579,
+          "pagerank": 0.03797,
+          "betweenness": 0.28788,
+          "community": 1
+        },
+        "shipping": {
+          "visits": 1288,
+          "entries": 0,
+          "exits": 550,
+          "exit_rate": 0.427,
+          "pagerank": 0.02614,
+          "betweenness": 0.15909,
+          "community": 1
+        },
+        "payment": {
+          "visits": 570,
+          "entries": 0,
+          "exits": 281,
+          "exit_rate": 0.493,
+          "pagerank": 0.01716,
+          "betweenness": 0.08333,
+          "community": 1
+        },
+        "confirmation": {
+          "visits": 272,
+          "entries": 0,
+          "exits": 255,
+          "exit_rate": 0.9375,
+          "pagerank": 0.01373,
+          "betweenness": 0.07576,
+          "community": 1
+        }
+      },
+      "path_lengths": {
+        "converters": 270,
+        "median_actual_steps": 8.0,
+        "median_shortest_steps": 5.0
+      },
+      "edges": [
+        {
+          "source": "home",
+          "target": "products",
+          "weight": 2240
+        },
+        {
+          "source": "home",
+          "target": "deals",
+          "weight": 699
+        },
+        {
+          "source": "home",
+          "target": "about",
+          "weight": 313
+        },
+        {
+          "source": "home",
+          "target": "product_detail",
+          "weight": 650
+        },
+        {
+          "source": "home",
+          "target": "blog",
+          "weight": 409
+        },
+        {
+          "source": "home",
+          "target": "reviews",
+          "weight": 26
+        },
+        {
+          "source": "home",
+          "target": "compare",
+          "weight": 26
+        },
+        {
+          "source": "home",
+          "target": "size_guide",
+          "weight": 23
+        },
+        {
+          "source": "products",
+          "target": "home",
+          "weight": 721
+        },
+        {
+          "source": "products",
+          "target": "product_detail",
+          "weight": 5421
+        },
+        {
+          "source": "products",
+          "target": "deals",
+          "weight": 549
+        },
+        {
+          "source": "products",
+          "target": "blog",
+          "weight": 985
+        },
+        {
+          "source": "products",
+          "target": "about",
+          "weight": 66
+        },
+        {
+          "source": "products",
+          "target": "size_guide",
+          "weight": 88
+        },
+        {
+          "source": "products",
+          "target": "reviews",
+          "weight": 68
+        },
+        {
+          "source": "products",
+          "target": "compare",
+          "weight": 72
+        },
+        {
+          "source": "products",
+          "target": "products",
+          "weight": 70
+        },
+        {
+          "source": "product_detail",
+          "target": "products",
+          "weight": 3583
+        },
+        {
+          "source": "product_detail",
+          "target": "size_guide",
+          "weight": 961
+        },
+        {
+          "source": "product_detail",
+          "target": "cart",
+          "weight": 1848
+        },
+        {
+          "source": "product_detail",
+          "target": "compare",
+          "weight": 4329
+        },
+        {
+          "source": "product_detail",
+          "target": "product_detail",
+          "weight": 6672
+        },
+        {
+          "source": "product_detail",
+          "target": "home",
+          "weight": 474
+        },
+        {
+          "source": "product_detail",
+          "target": "deals",
+          "weight": 228
+        },
+        {
+          "source": "product_detail",
+          "target": "blog",
+          "weight": 251
+        },
+        {
+          "source": "product_detail",
+          "target": "reviews",
+          "weight": 239
+        },
+        {
+          "source": "product_detail",
+          "target": "about",
+          "weight": 231
+        },
+        {
+          "source": "deals",
+          "target": "products",
+          "weight": 297
+        },
+        {
+          "source": "deals",
+          "target": "home",
+          "weight": 135
+        },
+        {
+          "source": "deals",
+          "target": "product_detail",
+          "weight": 986
+        },
+        {
+          "source": "deals",
+          "target": "compare",
+          "weight": 86
+        },
+        {
+          "source": "deals",
+          "target": "blog",
+          "weight": 80
+        },
+        {
+          "source": "deals",
+          "target": "reviews",
+          "weight": 88
+        },
+        {
+          "source": "deals",
+          "target": "deals",
+          "weight": 78
+        },
+        {
+          "source": "deals",
+          "target": "about",
+          "weight": 70
+        },
+        {
+          "source": "deals",
+          "target": "size_guide",
+          "weight": 67
+        },
+        {
+          "source": "blog",
+          "target": "home",
+          "weight": 263
+        },
+        {
+          "source": "blog",
+          "target": "product_detail",
+          "weight": 599
+        },
+        {
+          "source": "blog",
+          "target": "products",
+          "weight": 467
+        },
+        {
+          "source": "blog",
+          "target": "blog",
+          "weight": 85
+        },
+        {
+          "source": "blog",
+          "target": "about",
+          "weight": 471
+        },
+        {
+          "source": "blog",
+          "target": "deals",
+          "weight": 91
+        },
+        {
+          "source": "blog",
+          "target": "reviews",
+          "weight": 95
+        },
+        {
+          "source": "blog",
+          "target": "compare",
+          "weight": 87
+        },
+        {
+          "source": "blog",
+          "target": "size_guide",
+          "weight": 80
+        },
+        {
+          "source": "about",
+          "target": "reviews",
+          "weight": 144
+        },
+        {
+          "source": "about",
+          "target": "home",
+          "weight": 142
+        },
+        {
+          "source": "about",
+          "target": "deals",
+          "weight": 76
+        },
+        {
+          "source": "about",
+          "target": "product_detail",
+          "weight": 228
+        },
+        {
+          "source": "about",
+          "target": "size_guide",
+          "weight": 80
+        },
+        {
+          "source": "about",
+          "target": "compare",
+          "weight": 84
+        },
+        {
+          "source": "about",
+          "target": "about",
+          "weight": 76
+        },
+        {
+          "source": "about",
+          "target": "products",
+          "weight": 430
+        },
+        {
+          "source": "about",
+          "target": "blog",
+          "weight": 79
+        },
+        {
+          "source": "compare",
+          "target": "product_detail",
+          "weight": 4084
+        },
+        {
+          "source": "compare",
+          "target": "products",
+          "weight": 213
+        },
+        {
+          "source": "compare",
+          "target": "deals",
+          "weight": 79
+        },
+        {
+          "source": "compare",
+          "target": "reviews",
+          "weight": 80
+        },
+        {
+          "source": "compare",
+          "target": "compare",
+          "weight": 65
+        },
+        {
+          "source": "compare",
+          "target": "size_guide",
+          "weight": 85
+        },
+        {
+          "source": "compare",
+          "target": "about",
+          "weight": 82
+        },
+        {
+          "source": "compare",
+          "target": "blog",
+          "weight": 88
+        },
+        {
+          "source": "size_guide",
+          "target": "product_detail",
+          "weight": 442
+        },
+        {
+          "source": "size_guide",
+          "target": "blog",
+          "weight": 80
+        },
+        {
+          "source": "size_guide",
+          "target": "size_guide",
+          "weight": 90
+        },
+        {
+          "source": "size_guide",
+          "target": "about",
+          "weight": 90
+        },
+        {
+          "source": "size_guide",
+          "target": "deals",
+          "weight": 91
+        },
+        {
+          "source": "size_guide",
+          "target": "products",
+          "weight": 64
+        },
+        {
+          "source": "size_guide",
+          "target": "reviews",
+          "weight": 85
+        },
+        {
+          "source": "size_guide",
+          "target": "compare",
+          "weight": 69
+        },
+        {
+          "source": "reviews",
+          "target": "products",
+          "weight": 210
+        },
+        {
+          "source": "reviews",
+          "target": "cart",
+          "weight": 171
+        },
+        {
+          "source": "reviews",
+          "target": "product_detail",
+          "weight": 433
+        },
+        {
+          "source": "reviews",
+          "target": "deals",
+          "weight": 75
+        },
+        {
+          "source": "reviews",
+          "target": "blog",
+          "weight": 80
+        },
+        {
+          "source": "reviews",
+          "target": "about",
+          "weight": 85
+        },
+        {
+          "source": "reviews",
+          "target": "size_guide",
+          "weight": 68
+        },
+        {
+          "source": "reviews",
+          "target": "compare",
+          "weight": 79
+        },
+        {
+          "source": "reviews",
+          "target": "reviews",
+          "weight": 79
+        },
+        {
+          "source": "cart",
+          "target": "shipping",
+          "weight": 1271
+        },
+        {
+          "source": "cart",
+          "target": "products",
+          "weight": 352
+        },
+        {
+          "source": "shipping",
+          "target": "cart",
+          "weight": 168
+        },
+        {
+          "source": "shipping",
+          "target": "payment",
+          "weight": 570
+        },
+        {
+          "source": "payment",
+          "target": "shipping",
+          "weight": 17
+        },
+        {
+          "source": "payment",
+          "target": "confirmation",
+          "weight": 272
+        },
+        {
+          "source": "confirmation",
+          "target": "home",
+          "weight": 17
+        }
+      ],
+      "funnel": {
+        "reached": {
+          "cart": 1844,
+          "shipping": 1168,
+          "payment": 562,
+          "confirmation": 270
+        },
+        "steps": [
+          {
+            "from_step": "cart",
+            "to_step": "shipping",
+            "reached_from": 1844,
+            "reached_to": 1168,
+            "continue_rate": 0.6334
+          },
+          {
+            "from_step": "shipping",
+            "to_step": "payment",
+            "reached_from": 1168,
+            "reached_to": 562,
+            "continue_rate": 0.4812
+          },
+          {
+            "from_step": "payment",
+            "to_step": "confirmation",
+            "reached_from": 562,
+            "reached_to": 270,
+            "continue_rate": 0.4804
+          }
+        ]
+      },
+      "bounce_rate": 0.1896,
+      "mean_pages": 7.14,
+      "conversion": 0.0357
+    }
+  },
+  "issues": {
+    "dead_ends": [
+      {
+        "page": "size_guide",
+        "exit_rate": 0.7105,
+        "visits": 639,
+        "typical_exit_rate": 0.218,
+        "times_typical": 3.3
+      }
+    ],
+    "funnel_leaks": [
+      {
+        "step": "shipping -> payment",
+        "from_step": "shipping",
+        "to_step": "payment",
+        "reached_from": 811,
+        "reached_to": 289,
+        "continue_rate": 0.3564
+      }
+    ],
+    "loops": [
+      {
+        "pages": [
+          "compare",
+          "product_detail"
+        ],
+        "sessions_with_both": 1254,
+        "looping_sessions": 850,
+        "loop_rate": 0.678
+      }
+    ],
+    "rage_clicks": [
+      {
+        "page": "cart",
+        "views": 1516,
+        "rage_views": 432,
+        "rate": 0.285
+      }
+    ],
+    "hidden_pages": [
+      {
+        "page": "reviews",
+        "designed_rank": 13,
+        "real_rank": 12,
+        "links_in": 1,
+        "arrive_directly_share": 0.872,
+        "visits": 494,
+        "conversion_lift": 1.85,
+        "conversion_if_seen": 0.0951,
+        "overall_conversion": 0.0515
+      }
+    ],
+    "type_gap": [
+      {
+        "step": "payment -> confirmation",
+        "human_rate": 0.8754,
+        "agent_rate": 0.0463,
+        "gap": 0.829,
+        "human_n": 289,
+        "agent_n": 259
+      },
+      {
+        "step": "shipping -> payment",
+        "human_rate": 0.3564,
+        "agent_rate": 0.8548,
+        "gap": -0.498,
+        "human_n": 811,
+        "agent_n": 303
+      }
+    ]
+  },
+  "tables": {
+    "rage_rate_by_page": {
+      "about": 0.0206,
+      "blog": 0.0073,
+      "cart": 0.285,
+      "compare": 0.0066,
+      "confirmation": 0.0039,
+      "deals": 0.0071,
+      "home": 0.0081,
+      "payment": 0.0404,
+      "product_detail": 0.0072,
+      "products": 0.0054,
+      "reviews": 0.0061,
+      "shipping": 0.0098,
+      "size_guide": 0.0078
+    },
+    "hidden_table": {
+      "home": {
+        "designed_rank": 3,
+        "real_rank": 4,
+        "links_in": 5,
+        "arrive_directly_share": 0.636,
+        "conversion_if_seen": 0.0457,
+        "conversion_lift": 0.89
+      },
+      "products": {
+        "designed_rank": 2,
+        "real_rank": 2,
+        "links_in": 7,
+        "arrive_directly_share": 0.126,
+        "conversion_if_seen": 0.0563,
+        "conversion_lift": 1.09
+      },
+      "product_detail": {
+        "designed_rank": 1,
+        "real_rank": 1,
+        "links_in": 7,
+        "arrive_directly_share": 0.103,
+        "conversion_if_seen": 0.0696,
+        "conversion_lift": 1.35
+      },
+      "deals": {
+        "designed_rank": 5,
+        "real_rank": 8,
+        "links_in": 2,
+        "arrive_directly_share": 0.312,
+        "conversion_if_seen": 0.052,
+        "conversion_lift": 1.01
+      },
+      "blog": {
+        "designed_rank": 6,
+        "real_rank": 6,
+        "links_in": 2,
+        "arrive_directly_share": 0.431,
+        "conversion_if_seen": 0.037,
+        "conversion_lift": 0.72
+      },
+      "about": {
+        "designed_rank": 11,
+        "real_rank": 13,
+        "links_in": 1,
+        "arrive_directly_share": 0.0,
+        "conversion_if_seen": 0.0263,
+        "conversion_lift": 0.51
+      },
+      "compare": {
+        "designed_rank": 8,
+        "real_rank": 3,
+        "links_in": 1,
+        "arrive_directly_share": 0.0,
+        "conversion_if_seen": 0.0694,
+        "conversion_lift": 1.35
+      },
+      "size_guide": {
+        "designed_rank": 9,
+        "real_rank": 10,
+        "links_in": 1,
+        "arrive_directly_share": 0.0,
+        "conversion_if_seen": 0.01,
+        "conversion_lift": 0.19
+      },
+      "reviews": {
+        "designed_rank": 13,
+        "real_rank": 12,
+        "links_in": 1,
+        "arrive_directly_share": 0.872,
+        "conversion_if_seen": 0.0951,
+        "conversion_lift": 1.85
+      },
+      "cart": {
+        "designed_rank": 4,
+        "real_rank": 5,
+        "links_in": 3,
+        "arrive_directly_share": 0.0,
+        "conversion_if_seen": 0.1942,
+        "conversion_lift": 3.77
+      },
+      "shipping": {
+        "designed_rank": 7,
+        "real_rank": 7,
+        "links_in": 2,
+        "arrive_directly_share": 0.0,
+        "conversion_if_seen": 0.312,
+        "conversion_lift": 6.06
+      },
+      "payment": {
+        "designed_rank": 10,
+        "real_rank": 9,
+        "links_in": 1,
+        "arrive_directly_share": 0.0,
+        "conversion_if_seen": 0.8754,
+        "conversion_lift": 17.01
+      },
+      "confirmation": {
+        "designed_rank": 12,
+        "real_rank": 11,
+        "links_in": 1,
+        "arrive_directly_share": 0.0,
+        "conversion_if_seen": 1.0,
+        "conversion_lift": 19.43
+      }
+    },
+    "page_gap": [
+      {
+        "page": "home",
+        "human_visit_share": 0.1101,
+        "agent_visit_share": 0.0526,
+        "difference": -0.0576
+      },
+      {
+        "page": "products",
+        "human_visit_share": 0.1782,
+        "agent_visit_share": 0.2906,
+        "difference": 0.1124
+      },
+      {
+        "page": "product_detail",
+        "human_visit_share": 0.3277,
+        "agent_visit_share": 0.3554,
+        "difference": 0.0277
+      },
+      {
+        "page": "deals",
+        "human_visit_share": 0.0399,
+        "agent_visit_share": 0.0094,
+        "difference": -0.0306
+      },
+      {
+        "page": "blog",
+        "human_visit_share": 0.0485,
+        "agent_visit_share": 0.0,
+        "difference": -0.0485
+      },
+      {
+        "page": "about",
+        "human_visit_share": 0.0087,
+        "agent_visit_share": 0.0,
+        "difference": -0.0087
+      },
+      {
+        "page": "compare",
+        "human_visit_share": 0.14,
+        "agent_visit_share": 0.0,
+        "difference": -0.14
+      },
+      {
+        "page": "size_guide",
+        "human_visit_share": 0.0228,
+        "agent_visit_share": 0.0,
+        "difference": -0.0228
+      },
+      {
+        "page": "reviews",
+        "human_visit_share": 0.0176,
+        "agent_visit_share": 0.0,
+        "difference": -0.0176
+      },
+      {
+        "page": "cart",
+        "human_visit_share": 0.054,
+        "agent_visit_share": 0.1071,
+        "difference": 0.0531
+      },
+      {
+        "page": "shipping",
+        "human_visit_share": 0.0329,
+        "agent_visit_share": 0.0977,
+        "difference": 0.0648
+      },
+      {
+        "page": "payment",
+        "human_visit_share": 0.0106,
+        "agent_visit_share": 0.0835,
+        "difference": 0.0729
+      },
+      {
+        "page": "confirmation",
+        "human_visit_share": 0.0091,
+        "agent_visit_share": 0.0039,
+        "difference": -0.0052
+      }
+    ]
+  },
+  "fingerprints": {
+    "ai_agent": {
+      "n": 535,
+      "median": {
+        "exploring": 0.308,
+        "depth": 0.5,
+        "backtracking": 0.4,
+        "recovery": 0.5,
+        "speed": 1.721,
+        "rhythm": 0.388,
+        "reading": 1.754,
+        "form_handling": 1.0,
+        "goal_focus": 0.75
+      },
+      "radar": {
+        "exploring": 0.5,
+        "depth": 0.667,
+        "backtracking": 0.5,
+        "recovery": 0.375,
+        "speed": 0.359,
+        "rhythm": 0.351,
+        "reading": 0.403,
+        "form_handling": 0.5,
+        "goal_focus": 0.75
+      }
+    },
+    "human": {
+      "n": 4915,
+      "median": {
+        "exploring": 0.231,
+        "depth": 0.0,
+        "backtracking": 0.0,
+        "recovery": 1.0,
+        "speed": 3.278,
+        "rhythm": 0.529,
+        "reading": 3.484,
+        "form_handling": 0.0,
+        "goal_focus": 0.333
+      },
+      "radar": {
+        "exploring": 0.333,
+        "depth": 0.0,
+        "backtracking": 0.0,
+        "recovery": 1.0,
+        "speed": 0.781,
+        "rhythm": 0.486,
+        "reading": 0.801,
+        "form_handling": 0.0,
+        "goal_focus": 0.333
+      }
+    },
+    "old_bot": {
+      "n": 1765,
+      "median": {
+        "exploring": 0.231,
+        "depth": 0.0,
+        "backtracking": 0.333,
+        "recovery": 1.0,
+        "speed": 0.631,
+        "rhythm": 0.153,
+        "reading": 0.565,
+        "form_handling": 0.0,
+        "goal_focus": 0.667
+      },
+      "radar": {
+        "exploring": 0.333,
+        "depth": 0.0,
+        "backtracking": 0.417,
+        "recovery": 1.0,
+        "speed": 0.065,
+        "rhythm": 0.124,
+        "reading": 0.13,
+        "form_handling": 0.0,
+        "goal_focus": 0.667
+      }
+    },
+    "unknown": {
+      "n": 347,
+      "median": {
+        "exploring": 0.231,
+        "depth": 0.0,
+        "backtracking": 0.333,
+        "recovery": 1.0,
+        "speed": 3.803,
+        "rhythm": 0.529,
+        "reading": 3.816,
+        "form_handling": 0.0,
+        "goal_focus": 0.0
+      },
+      "radar": {
+        "exploring": 0.333,
+        "depth": 0.0,
+        "backtracking": 0.417,
+        "recovery": 1.0,
+        "speed": 0.923,
+        "rhythm": 0.486,
+        "reading": 0.878,
+        "form_handling": 0.0,
+        "goal_focus": 0.0
+      }
+    }
+  },
+  "dirty_averages": {
+    "everyone": {
+      "bounce_rate": 0.1896,
+      "mean_pages": 7.14,
+      "conversion": 0.0357
+    },
+    "cleaned_humans": {
+      "bounce_rate": 0.2527,
+      "mean_pages": 5.71,
+      "conversion": 0.0515
+    }
+  }
+}

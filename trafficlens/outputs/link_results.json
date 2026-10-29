@@ -1,0 +1,338 @@
+{
+  "source_by_journey": {
+    "cheap_ads": {
+      "humans": 378,
+      "top_exit_pages": [
+        {
+          "page": "home",
+          "share": 0.725
+        },
+        {
+          "page": "products",
+          "share": 0.209
+        },
+        {
+          "page": "product_detail",
+          "share": 0.019
+        }
+      ],
+      "bounce_rate": 0.913,
+      "conversion": 0.0026,
+      "mean_pages": 1.48
+    },
+    "direct": {
+      "humans": 1181,
+      "top_exit_pages": [
+        {
+          "page": "product_detail",
+          "share": 0.213
+        },
+        {
+          "page": "products",
+          "share": 0.142
+        },
+        {
+          "page": "home",
+          "share": 0.136
+        }
+      ],
+      "bounce_rate": 0.145,
+      "conversion": 0.0542,
+      "mean_pages": 6.48
+    },
+    "email": {
+      "humans": 414,
+      "top_exit_pages": [
+        {
+          "page": "product_detail",
+          "share": 0.242
+        },
+        {
+          "page": "products",
+          "share": 0.128
+        },
+        {
+          "page": "cart",
+          "share": 0.121
+        }
+      ],
+      "bounce_rate": 0.157,
+      "conversion": 0.0604,
+      "mean_pages": 6.88
+    },
+    "promo_ads": {
+      "humans": 401,
+      "top_exit_pages": [
+        {
+          "page": "deals",
+          "share": 0.486
+        },
+        {
+          "page": "product_detail",
+          "share": 0.117
+        },
+        {
+          "page": "products",
+          "share": 0.08
+        }
+      ],
+      "bounce_rate": 0.479,
+      "conversion": 0.0349,
+      "mean_pages": 4.12
+    },
+    "referral": {
+      "humans": 348,
+      "top_exit_pages": [
+        {
+          "page": "product_detail",
+          "share": 0.195
+        },
+        {
+          "page": "blog",
+          "share": 0.149
+        },
+        {
+          "page": "products",
+          "share": 0.118
+        }
+      ],
+      "bounce_rate": 0.218,
+      "conversion": 0.0603,
+      "mean_pages": 5.97
+    },
+    "search": {
+      "humans": 1626,
+      "top_exit_pages": [
+        {
+          "page": "product_detail",
+          "share": 0.2
+        },
+        {
+          "page": "products",
+          "share": 0.122
+        },
+        {
+          "page": "shipping",
+          "share": 0.116
+        }
+      ],
+      "bounce_rate": 0.169,
+      "conversion": 0.0621,
+      "mean_pages": 6.0
+    },
+    "social_x": {
+      "humans": 567,
+      "top_exit_pages": [
+        {
+          "page": "product_detail",
+          "share": 0.219
+        },
+        {
+          "page": "blog",
+          "share": 0.189
+        },
+        {
+          "page": "products",
+          "share": 0.115
+        }
+      ],
+      "bounce_rate": 0.21,
+      "conversion": 0.0476,
+      "mean_pages": 6.23
+    }
+  },
+  "expectation_mismatches": [
+    {
+      "source": "cheap_ads",
+      "page": "home",
+      "visits": 305,
+      "exit_rate": 0.898,
+      "others_exit_rate": 0.145,
+      "ratio": 6.2,
+      "difference": 0.753,
+      "mismatch": true
+    },
+    {
+      "source": "cheap_ads",
+      "page": "products",
+      "visits": 109,
+      "exit_rate": 0.725,
+      "others_exit_rate": 0.114,
+      "ratio": 6.37,
+      "difference": 0.611,
+      "mismatch": true
+    },
+    {
+      "source": "promo_ads",
+      "page": "deals",
+      "visits": 257,
+      "exit_rate": 0.759,
+      "others_exit_rate": 0.214,
+      "ratio": 3.54,
+      "difference": 0.545,
+      "mismatch": true
+    }
+  ],
+  "human_vs_agent_checkout": {
+    "human": [
+      {
+        "from_step": "cart",
+        "to_step": "shipping",
+        "reached_from": 1303,
+        "reached_to": 811,
+        "continue_rate": 0.6224
+      },
+      {
+        "from_step": "shipping",
+        "to_step": "payment",
+        "reached_from": 811,
+        "reached_to": 289,
+        "continue_rate": 0.3564
+      },
+      {
+        "from_step": "payment",
+        "to_step": "confirmation",
+        "reached_from": 289,
+        "reached_to": 253,
+        "continue_rate": 0.8754
+      }
+    ],
+    "ai_agent": [
+      {
+        "from_step": "cart",
+        "to_step": "shipping",
+        "reached_from": 332,
+        "reached_to": 303,
+        "continue_rate": 0.9127
+      },
+      {
+        "from_step": "shipping",
+        "to_step": "payment",
+        "reached_from": 303,
+        "reached_to": 259,
+        "continue_rate": 0.8548
+      },
+      {
+        "from_step": "payment",
+        "to_step": "confirmation",
+        "reached_from": 259,
+        "reached_to": 12,
+        "continue_rate": 0.0463
+      }
+    ]
+  },
+  "source_quality": [
+    {
+      "source": "cheap_ads",
+      "visits": 632,
+      "human_share": 0.598,
+      "bot_or_agent_share": 0.381,
+      "unknown_share": 0.021,
+      "human_bounce_rate": 0.913,
+      "human_depth": 0.015,
+      "human_conversion": 0.0026,
+      "quality_score": 23.4,
+      "z": -6.87,
+      "low_quality": true,
+      "note": NaN
+    },
+    {
+      "source": "social_x",
+      "visits": 1205,
+      "human_share": 0.471,
+      "bot_or_agent_share": 0.506,
+      "unknown_share": 0.023,
+      "human_bounce_rate": 0.21,
+      "human_depth": 0.136,
+      "human_conversion": 0.0476,
+      "quality_score": 67.5,
+      "z": -0.67,
+      "low_quality": false,
+      "note": NaN
+    },
+    {
+      "source": "promo_ads",
+      "visits": 437,
+      "human_share": 0.918,
+      "bot_or_agent_share": 0.046,
+      "unknown_share": 0.037,
+      "human_bounce_rate": 0.479,
+      "human_depth": 0.086,
+      "human_conversion": 0.0349,
+      "quality_score": 69.2,
+      "z": -0.44,
+      "low_quality": false,
+      "note": NaN
+    },
+    {
+      "source": "direct",
+      "visits": 2112,
+      "human_share": 0.559,
+      "bot_or_agent_share": 0.412,
+      "unknown_share": 0.029,
+      "human_bounce_rate": 0.145,
+      "human_depth": 0.142,
+      "human_conversion": 0.0542,
+      "quality_score": 72.3,
+      "z": 0.0,
+      "low_quality": false,
+      "note": NaN
+    },
+    {
+      "source": "referral",
+      "visits": 541,
+      "human_share": 0.643,
+      "bot_or_agent_share": 0.231,
+      "unknown_share": 0.126,
+      "human_bounce_rate": 0.218,
+      "human_depth": 0.142,
+      "human_conversion": 0.0603,
+      "quality_score": 73.1,
+      "z": 0.11,
+      "low_quality": false,
+      "note": NaN
+    },
+    {
+      "source": "search",
+      "visits": 2035,
+      "human_share": 0.799,
+      "bot_or_agent_share": 0.158,
+      "unknown_share": 0.043,
+      "human_bounce_rate": 0.169,
+      "human_depth": 0.163,
+      "human_conversion": 0.0621,
+      "quality_score": 81.0,
+      "z": 1.22,
+      "low_quality": false,
+      "note": NaN
+    },
+    {
+      "source": "email",
+      "visits": 509,
+      "human_share": 0.813,
+      "bot_or_agent_share": 0.043,
+      "unknown_share": 0.143,
+      "human_bounce_rate": 0.157,
+      "human_depth": 0.157,
+      "human_conversion": 0.0604,
+      "quality_score": 81.2,
+      "z": 1.25,
+      "low_quality": false,
+      "note": NaN
+    },
+    {
+      "source": "ai_assistant",
+      "visits": 91,
+      "human_share": 0.0,
+      "bot_or_agent_share": 1.0,
+      "unknown_share": 0.0,
+      "human_bounce_rate": 1.0,
+      "human_depth": 0.0,
+      "human_conversion": 0.0,
+      "quality_score": NaN,
+      "z": NaN,
+      "low_quality": false,
+      "note": "almost no human visitors (agents/bots only)"
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+[
+  {
+    "id": "T1",
+    "side": "traffic",
+    "issue": "dumb_bots",
+    "title": "Simple bots are visiting",
+    "what_happened": "858 visits (11% of all traffic) had no mouse or touch activity, moved through pages in about 0.5 seconds each, and kept almost perfectly even timing.",
+    "where": "Top sources: social_x (520 visits), cheap_ads (124 visits), direct (123 visits).",
+    "likely_cause": "Guess: simple scripts or attack tools that fetch pages without a real browser.",
+    "fix": "Rate-limit or challenge these visits, and leave them out of your reports so averages stay honest.",
+    "impact_visits": 858,
+    "confidence": "high",
+    "evidence": {
+      "visits": 858,
+      "share_of_all": 0.1135,
+      "median_seconds_per_page": 0.53,
+      "src_social_x": 520,
+      "src_cheap_ads": 124,
+      "src_direct": 123
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "T2",
+    "side": "traffic",
+    "issue": "smart_bots_agents",
+    "title": "Some visitors may be hiding as humans",
+    "what_happened": "535 visits were labelled AI agents. Another 347 visits (4.6%) could not be sorted with confidence and were marked Unknown.",
+    "where": "Unknown visits by source: search (88), email (73), referral (68).",
+    "likely_cause": "Guess: some Unknown visits are bots that copy human mouse movement and timing. Others are real people with unusual habits. This system cannot tell these apart for sure.",
+    "fix": "Review the Unknown list, keep Unknown visits out of conversion numbers, and ask agent makers for a verifiable identity.",
+    "impact_visits": 882,
+    "confidence": "not sure",
+    "evidence": {
+      "agents": 535,
+      "unknown": 347,
+      "unknown_share": 0.0459,
+      "unk_search": 88,
+      "unk_email": 73,
+      "unk_referral": 68
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "T3",
+    "side": "traffic",
+    "issue": "scrapers",
+    "title": "Scrapers are copying product pages",
+    "what_happened": "71 visits opened product pages one by one in number order, reading a median of 68 pages each at about 65 pages a minute.",
+    "where": "Product detail pages.",
+    "likely_cause": "Guess: someone is copying your prices or catalogue.",
+    "fix": "Limit how fast one visitor can open product pages, and consider hiding prices from unknown visitors.",
+    "impact_visits": 4828,
+    "confidence": "high",
+    "evidence": {
+      "visits": 71,
+      "median_pages": 68,
+      "pages_per_min": 65
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "T4",
+    "side": "traffic",
+    "issue": "spike",
+    "title": "Sudden spike from social_x",
+    "what_happened": "Between 2026-09-24 14:00:00 and 2026-09-24 14:30:00, social_x sent 452 visits. That equals 12.6 days of its usual traffic (about 36 visits a day). 72% followed the exact same path and 100% were judged not human.",
+    "where": "Source: social_x.",
+    "likely_cause": "Guess: an automated flood, possibly bought or fake traffic.",
+    "fix": "Block or rate-limit this source for now, exclude the window from reports, and check any ads or posts that point here.",
+    "impact_visits": 452,
+    "confidence": "high",
+    "evidence": {
+      "start": "2026-09-24 14:00:00",
+      "end": "2026-09-24 14:30:00",
+      "visits": 452,
+      "days_of_usual_traffic": 12.6,
+      "usual_per_day": 36,
+      "same_path": 0.715,
+      "non_human": 0.998
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "T5",
+    "side": "traffic",
+    "issue": "low_quality_source",
+    "title": "cheap_ads brings low-quality visitors",
+    "what_happened": "cheap_ads sent 632 visits. Only 60% were judged human, and 91% of those humans left after one page. Its quality score is 23.4 out of 100, against a median of 72.3 for all sources.",
+    "where": "Source: cheap_ads.",
+    "likely_cause": "Guess: the audience or the promise of this source does not match your site, or part of it is bot traffic.",
+    "fix": "Pause or cut spend on this source until it improves, and test a different landing page for it.",
+    "impact_visits": 599,
+    "confidence": "high",
+    "evidence": {
+      "visits": 632,
+      "human_share": 0.598,
+      "human_bounce": 0.913,
+      "score": 23.4,
+      "scale": 100,
+      "median_score": 72.3
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "T6",
+    "side": "traffic",
+    "issue": "fake_device",
+    "title": "Visitors pretending to be phones",
+    "what_happened": "192 visits (2.5%) claimed to be a phone or tablet but never produced a single touch. 98% of them were judged not human. The most common source was direct (57 visits).",
+    "where": "Visitors claiming mobile devices.",
+    "likely_cause": "Guess: bots that fake a phone browser label but run on a computer or server.",
+    "fix": "Treat a phone label with zero touch as a strong bot warning, and challenge those visits.",
+    "impact_visits": 192,
+    "confidence": "medium",
+    "evidence": {
+      "visits": 192,
+      "share": 0.0254,
+      "non_human": 0.984,
+      "top_source_visits": 57
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "T7",
+    "side": "traffic",
+    "issue": "crawlers",
+    "title": "Search-engine crawlers are visiting (usually fine)",
+    "what_happened": "265 visits (3.5%) openly declared themselves as search-engine crawlers.",
+    "where": "Crawlers read many pages and never buy.",
+    "likely_cause": "Guess: normal indexing by search engines. A declared name can be faked, so it should be verified.",
+    "fix": "Keep these allowed, but verify them, and keep them out of human conversion numbers.",
+    "impact_visits": 265,
+    "confidence": "high",
+    "evidence": {
+      "visits": 265,
+      "share": 0.035
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "B1",
+    "side": "behaviour",
+    "issue": "dead_end",
+    "title": "size_guide is a dead end",
+    "what_happened": "71% of human visits to size_guide ended there. Other non-checkout pages usually lose 22%, so this is 3.3 times higher. It was visited 639 times.",
+    "where": "Page: size_guide.",
+    "likely_cause": "Guess: the page gives no clear next step, or it does not answer what the visitor came for.",
+    "fix": "Add a clear next step on size_guide (a button back to the product or to the cart).",
+    "impact_visits": 454,
+    "confidence": "high",
+    "evidence": {
+      "exit_rate": 0.7105,
+      "typical": 0.218,
+      "times_typical": 3.3,
+      "visits": 639
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "B2",
+    "side": "behaviour",
+    "issue": "funnel_drop",
+    "title": "Many buyers leave at shipping -> payment",
+    "what_happened": "Of 811 humans who reached shipping, only 289 (36%) went on to payment.",
+    "where": "Checkout step: shipping -> payment.",
+    "likely_cause": "Guess: an unexpected cost, a long form, or a confusing step.",
+    "fix": "Test a shorter shipping form, show costs earlier, and watch how many continue.",
+    "impact_visits": 522,
+    "confidence": "high",
+    "evidence": {
+      "reached": 811,
+      "continued": 289,
+      "continue_rate": 0.3564
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "B3",
+    "side": "behaviour",
+    "issue": "loops",
+    "title": "Visitors bounce between compare and product_detail",
+    "what_happened": "850 of 1,254 human visits that touched both pages (68%) went back and forth between them again and again.",
+    "where": "Pages: compare and product_detail.",
+    "likely_cause": "Guess: visitors cannot decide, or they cannot find the answer they need on either page.",
+    "fix": "Put the key comparison facts directly on product_detail, so people do not need to keep going back to compare.",
+    "impact_visits": 850,
+    "confidence": "high",
+    "evidence": {
+      "looping": 850,
+      "both": 1254,
+      "loop_rate": 0.678
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "B4",
+    "side": "behaviour",
+    "issue": "rage_clicks",
+    "title": "Rage clicking on cart",
+    "what_happened": "On 28% of human views of cart (432 of 1,516), the visitor clicked the same spot three or more times in a hurry.",
+    "where": "Page: cart.",
+    "likely_cause": "Guess: something that looks clickable does not respond (for example a coupon or apply button).",
+    "fix": "Check every button on cart for a delay or error, and show a clear response when it is clicked.",
+    "impact_visits": 432,
+    "confidence": "high",
+    "evidence": {
+      "rate": 0.285,
+      "rage_views": 432,
+      "views": 1516
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "B5",
+    "side": "behaviour",
+    "issue": "hidden_page",
+    "title": "reviews is useful but hidden",
+    "what_happened": "Only 1 page on your site links to reviews (rank 13 of 13 by links). Still, 87% of its 494 visits started right there, and visitors who saw it bought 1.9 times as often as the average human.",
+    "where": "Page: reviews.",
+    "likely_cause": "Guess: people search for it on their own because it answers a buying question.",
+    "fix": "Link to reviews from product pages and the cart, so more people see it.",
+    "impact_visits": 494,
+    "confidence": "high",
+    "evidence": {
+      "links_in": 1,
+      "designed_rank": 13,
+      "pages": 13,
+      "direct": 0.872,
+      "visits": 494,
+      "lift": 1.85
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "B6",
+    "side": "behaviour",
+    "issue": "type_gap",
+    "title": "AI agents fail at payment -> confirmation",
+    "what_happened": "At payment -> confirmation, 88% of humans continued but only 5% of AI agents did (humans: 289, agents: 259).",
+    "where": "Checkout step: payment -> confirmation.",
+    "likely_cause": "Guess: the form or button is hard for automated browsers to use, so customers who shop through an AI assistant cannot finish.",
+    "fix": "Test the page with an AI browser agent, and make form fields clearly labelled and simple.",
+    "impact_visits": 259,
+    "confidence": "high",
+    "evidence": {
+      "human_rate": 0.8754,
+      "agent_rate": 0.0463,
+      "human_n": 289,
+      "agent_n": 259
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "L1",
+    "side": "link",
+    "issue": "expectation_mismatch",
+    "title": "promo_ads visitors leave at deals",
+    "what_happened": "76% of human visits from promo_ads ended at deals, against 21% for visitors from all other sources (257 visits).",
+    "where": "Source promo_ads, page deals.",
+    "likely_cause": "Guess: the promise made by this source does not match what the page shows.",
+    "fix": "Make the deals page match the promo_ads message, or change the message.",
+    "impact_visits": 140,
+    "confidence": "high",
+    "evidence": {
+      "exit_rate": 0.759,
+      "others": 0.214,
+      "visits": 257
+    },
+    "unverified_numbers": []
+  },
+  {
+    "id": "L2",
+    "side": "link",
+    "issue": "dirty_averages",
+    "title": "Bots and agents distort your averages",
+    "what_happened": "Counting everyone, the bounce rate is 19.0% and conversion is 3.6%. Counting only visitors judged human, bounce rate is 25.3% and conversion is 5.1%.",
+    "where": "Whole site.",
+    "likely_cause": "Guess: non-human visits are mixed into your normal numbers.",
+    "fix": "Report on cleaned (human-only) numbers, and show bots and agents separately.",
+    "impact_visits": 2647,
+    "confidence": "high",
+    "evidence": {
+      "raw_bounce": 0.1896,
+      "raw_conv": 0.0357,
+      "clean_bounce": 0.2527,
+      "clean_conv": 0.0515
+    },
+    "unverified_numbers": []
+  }
+]

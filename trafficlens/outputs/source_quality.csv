@@ -1,0 +1,9 @@
+source,visits,human_share,bot_or_agent_share,unknown_share,human_bounce_rate,human_depth,human_conversion,quality_score,z,low_quality,note
+cheap_ads,632,0.598,0.381,0.021,0.913,0.015,0.0026,23.4,-6.87,True,
+social_x,1205,0.471,0.506,0.023,0.21,0.136,0.0476,67.5,-0.67,False,
+promo_ads,437,0.918,0.046,0.037,0.479,0.086,0.0349,69.2,-0.44,False,
+direct,2112,0.559,0.412,0.029,0.145,0.142,0.0542,72.3,0.0,False,
+referral,541,0.643,0.231,0.126,0.218,0.142,0.0603,73.1,0.11,False,
+search,2035,0.799,0.158,0.043,0.169,0.163,0.0621,81.0,1.22,False,
+email,509,0.813,0.043,0.143,0.157,0.157,0.0604,81.2,1.25,False,
+ai_assistant,91,0.0,1.0,0.0,1.0,0.0,0.0,,,False,almost no human visitors (agents/bots only)

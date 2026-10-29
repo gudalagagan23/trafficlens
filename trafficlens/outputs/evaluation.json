@@ -1,0 +1,373 @@
+{
+  "scorecard": [
+    {
+      "number": 1,
+      "side": "traffic",
+      "problem": "Dumb bots",
+      "planted": "about 800 simple bots, including a flood of 450",
+      "result": "found",
+      "evidence": "100.0% of 856 flagged as not human",
+      "note": ""
+    },
+    {
+      "number": 2,
+      "side": "traffic",
+      "problem": "Smart bots and AI agents hiding as humans",
+      "planted": "smart bots that copy humans, plus AI agents",
+      "result": "partly found",
+      "evidence": "smart bots: 72.7% flagged (27.3% passed as human); AI agents: 100.0% flagged",
+      "note": "Smart bots are the hardest case. Real browser agents may be harder than the ones simulated here."
+    },
+    {
+      "number": 3,
+      "side": "traffic",
+      "problem": "Scrapers",
+      "planted": "product-page scrapers",
+      "result": "found",
+      "evidence": "100.0% of 86 flagged",
+      "note": ""
+    },
+    {
+      "number": 4,
+      "side": "traffic",
+      "problem": "Sudden spike from one source",
+      "planted": "450 visits from social_x in 20 minutes",
+      "result": "found",
+      "evidence": "window found: True; false spike alarms: 0",
+      "note": ""
+    },
+    {
+      "number": 5,
+      "side": "traffic",
+      "problem": "Low-quality source",
+      "planted": "cheap_ads (visitors leave at once)",
+      "result": "found",
+      "evidence": "flagged sources: ['cheap_ads']",
+      "note": ""
+    },
+    {
+      "number": 6,
+      "side": "traffic",
+      "problem": "Fake device",
+      "planted": "bots that claim to be phones but have no touch",
+      "result": "found",
+      "evidence": "caught 100.0% of 181 planted; 94.3% of the flagged visits were truly fake",
+      "note": ""
+    },
+    {
+      "number": 7,
+      "side": "behaviour",
+      "problem": "Dead-end page",
+      "planted": "size_guide",
+      "result": "found",
+      "evidence": "flagged pages: ['size_guide']",
+      "note": ""
+    },
+    {
+      "number": 8,
+      "side": "behaviour",
+      "problem": "Funnel drop-off",
+      "planted": "shipping -> payment",
+      "result": "found",
+      "evidence": "flagged steps: ['shipping -> payment']",
+      "note": ""
+    },
+    {
+      "number": 9,
+      "side": "behaviour",
+      "problem": "Loops",
+      "planted": "compare <-> product_detail",
+      "result": "found",
+      "evidence": "flagged pairs: [('compare', 'product_detail')]",
+      "note": ""
+    },
+    {
+      "number": 10,
+      "side": "behaviour",
+      "problem": "Rage clicks",
+      "planted": "cart",
+      "result": "found",
+      "evidence": "flagged pages: ['cart']",
+      "note": ""
+    },
+    {
+      "number": 11,
+      "side": "behaviour",
+      "problem": "Hidden useful page",
+      "planted": "reviews",
+      "result": "found",
+      "evidence": "flagged pages: ['reviews']",
+      "note": ""
+    },
+    {
+      "number": 12,
+      "side": "behaviour",
+      "problem": "Human vs AI-agent gap",
+      "planted": "agents fail at payment",
+      "result": "found",
+      "evidence": "flagged: [('payment -> confirmation', 0.829), ('shipping -> payment', -0.498)]",
+      "note": "Extra step flagged: shipping -> payment. This is a real difference caused by problem 8 (humans leave at shipping, agents do not), not a false alarm."
+    }
+  ],
+  "bonus": {
+    "problem": "Expectation mismatch (link layer)",
+    "planted": "promo_ads at deals",
+    "result": "found",
+    "evidence": "flagged: [('cheap_ads', 'home'), ('cheap_ads', 'products'), ('promo_ads', 'deals')]"
+  },
+  "judge": {
+    "dumb bots (incl. the flood)": {
+      "n": 856,
+      "called_human": 0.0,
+      "called_ai_agent": 0.0,
+      "called_old_bot": 1.0,
+      "called_unknown": 0.0,
+      "flagged_not_human": 1.0
+    },
+    "scrapers": {
+      "n": 86,
+      "called_human": 0.0,
+      "called_ai_agent": 0.0,
+      "called_old_bot": 1.0,
+      "called_unknown": 0.0,
+      "flagged_not_human": 1.0
+    },
+    "declared crawlers": {
+      "n": 265,
+      "called_human": 0.0,
+      "called_ai_agent": 0.0,
+      "called_old_bot": 0.9962,
+      "called_unknown": 0.0038,
+      "flagged_not_human": 1.0
+    },
+    "medium bots": {
+      "n": 302,
+      "called_human": 0.0033,
+      "called_ai_agent": 0.0,
+      "called_old_bot": 0.9967,
+      "called_unknown": 0.0,
+      "flagged_not_human": 0.9967
+    },
+    "smart bots": {
+      "n": 187,
+      "called_human": 0.2727,
+      "called_ai_agent": 0.0,
+      "called_old_bot": 0.615,
+      "called_unknown": 0.1123,
+      "flagged_not_human": 0.7273
+    },
+    "AI agents": {
+      "n": 536,
+      "called_human": 0.0,
+      "called_ai_agent": 0.9981,
+      "called_old_bot": 0.0,
+      "called_unknown": 0.0019,
+      "flagged_not_human": 1.0
+    },
+    "novel bot (never seen)": {
+      "n": 106,
+      "called_human": 0.0,
+      "called_ai_agent": 0.0,
+      "called_old_bot": 0.0,
+      "called_unknown": 1.0,
+      "flagged_not_human": 1.0
+    },
+    "humans": {
+      "flagged_on_desktop_share": 1.0,
+      "flagged_median_visit_seconds": 52.0,
+      "other_desktop_median_visit_seconds": 154.0,
+      "flagged_median_timing_unevenness": 0.54,
+      "other_desktop_median_timing_unevenness": 0.74,
+      "n": 5224,
+      "called_human": 0.9309,
+      "called_ai_agent": 0.0,
+      "called_old_bot": 0.0274,
+      "called_unknown": 0.0417,
+      "flagged_not_human": 0.0691
+    }
+  },
+  "traffic_tests": {
+    "grouping": {
+      "groups_found": 19,
+      "purity_by_type": 0.949,
+      "homogeneity_by_type": 0.8124,
+      "completeness_by_type": 0.2986,
+      "note": "Groups are found with no labels. Purity = share of visitors sitting in a group whose main true type matches theirs. Completeness is low because one real type is split into several groups (this is normal for this method)."
+    },
+    "unknown_test": {
+      "novel_bots": 106,
+      "novel_sent_to_unknown": 1.0,
+      "novel_forced_into_human": 0.0,
+      "known_visitors_wrongly_unknown": 0.0323,
+      "known_humans_wrongly_unknown": 0.0417
+    },
+    "forecast": {
+      "mae_baseline": 1.286,
+      "mae_model": 1.041,
+      "improvement_pct": 19.1,
+      "model_wins": true,
+      "hours_scored": 1342,
+      "test_week": 3
+    },
+    "spike": {
+      "planted_source": "social_x",
+      "planted_start": "2026-09-24 14:00:00",
+      "planted_end": "2026-09-24 14:20:00",
+      "found": true,
+      "found_windows": [
+        {
+          "source": "social_x",
+          "start": "2026-09-24 14:00:00",
+          "end": "2026-09-24 14:30:00",
+          "visits": 452,
+          "normal_visits": 0.0,
+          "times_normal": 452.0,
+          "days_of_usual_traffic": 12.6,
+          "usual_visits_per_day": 35.9,
+          "same_path_share": 0.715,
+          "flagged_non_human_share": 0.998,
+          "peak_z": 326.0
+        }
+      ],
+      "false_alarms": 0
+    }
+  },
+  "behaviour_tests": {
+    "fingerprints": {
+      "guesses": [
+        {
+          "guess": "Humans have more uneven timing than AI agents",
+          "trait": "rhythm",
+          "median_first": 0.529,
+          "median_second": 0.388,
+          "p_value": 8.89e-163,
+          "guess_correct": true
+        },
+        {
+          "guess": "Humans have more uneven timing than old bots",
+          "trait": "rhythm",
+          "median_first": 0.529,
+          "median_second": 0.042,
+          "p_value": 0.0,
+          "guess_correct": true
+        },
+        {
+          "guess": "Humans spend longer on each page than AI agents",
+          "trait": "speed",
+          "median_first": 3.259,
+          "median_second": 1.721,
+          "p_value": 2.07e-242,
+          "guess_correct": true
+        },
+        {
+          "guess": "Humans spend longer reading content than AI agents",
+          "trait": "reading",
+          "median_first": 3.466,
+          "median_second": 1.754,
+          "p_value": 6.66e-182,
+          "guess_correct": true
+        },
+        {
+          "guess": "AI agents focus on the goal more than humans",
+          "trait": "goal_focus",
+          "median_first": 0.75,
+          "median_second": 0.333,
+          "p_value": 6.77e-112,
+          "guess_correct": true
+        },
+        {
+          "guess": "AI agents go deeper into checkout than humans",
+          "trait": "depth",
+          "median_first": 0.5,
+          "median_second": 0.0,
+          "p_value": 8.06e-94,
+          "guess_correct": true
+        },
+        {
+          "guess": "Humans try something new after going back; agents repeat",
+          "trait": "recovery",
+          "median_first": 1.0,
+          "median_second": 0.5,
+          "p_value": 8.11e-33,
+          "guess_correct": true
+        },
+        {
+          "guess": "Old bots go back to seen pages more than humans",
+          "trait": "backtracking",
+          "median_first": 0.4,
+          "median_second": 0.0,
+          "p_value": 7.67e-44,
+          "guess_correct": true
+        },
+        {
+          "guess": "Humans explore more different pages than AI agents",
+          "trait": "exploring",
+          "median_first": 0.231,
+          "median_second": 0.308,
+          "p_value": 1.36e-26,
+          "guess_correct": false
+        },
+        {
+          "guess": "AI agents need more tries on forms (only visits that used a form)",
+          "trait": "form_handling",
+          "median_first": 2.5,
+          "median_second": 1.0,
+          "p_value": 3.26e-85,
+          "guess_correct": true
+        }
+      ],
+      "guesses_correct": 9,
+      "guesses_total": 10,
+      "rhythm_kruskal_p": 0.0
+    },
+    "next_page": {
+      "train_steps": 19664,
+      "test_steps": 8419,
+      "baseline_accuracy": 0.5365,
+      "model_accuracy": 0.5674,
+      "baseline_top3": 0.8661,
+      "model_top3": 0.8603,
+      "model_wins": true,
+      "gain_points": 3.09
+    },
+    "purchase": {
+      "train_sessions": 2188,
+      "test_sessions": 946,
+      "buy_rate_in_test": 0.074,
+      "baseline_auc": 0.6183,
+      "model_auc": 0.6503,
+      "baseline_avg_precision": 0.119,
+      "model_avg_precision": 0.208,
+      "always_no_accuracy": 0.926,
+      "prior_buy_rate": 0.0836,
+      "model_wins": true
+    }
+  },
+  "dirty_averages": {
+    "true_humans": {
+      "bounce_rate": 0.2483,
+      "mean_pages": 5.59,
+      "conversion": 0.049
+    },
+    "everyone": {
+      "bounce_rate": 0.1896,
+      "mean_pages": 7.14,
+      "conversion": 0.0357
+    },
+    "cleaned": {
+      "bounce_rate": 0.2527,
+      "mean_pages": 5.71,
+      "conversion": 0.0515
+    },
+    "conversion_error_raw": 0.0133,
+    "conversion_error_cleaned": 0.0025,
+    "bounce_error_raw": 0.0587,
+    "bounce_error_cleaned": 0.0044
+  },
+  "summary": {
+    "found": 11,
+    "partly": 1,
+    "missed": 0,
+    "total": 12
+  }
+}

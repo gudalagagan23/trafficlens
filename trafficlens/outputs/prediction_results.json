@@ -1,0 +1,24 @@
+{
+  "next_page": {
+    "train_steps": 19664,
+    "test_steps": 8419,
+    "baseline_accuracy": 0.5365,
+    "model_accuracy": 0.5674,
+    "baseline_top3": 0.8661,
+    "model_top3": 0.8603,
+    "model_wins": true,
+    "gain_points": 3.09
+  },
+  "purchase": {
+    "train_sessions": 2188,
+    "test_sessions": 946,
+    "buy_rate_in_test": 0.074,
+    "baseline_auc": 0.6183,
+    "model_auc": 0.6503,
+    "baseline_avg_precision": 0.119,
+    "model_avg_precision": 0.208,
+    "always_no_accuracy": 0.926,
+    "prior_buy_rate": 0.0836,
+    "model_wins": true
+  }
+}

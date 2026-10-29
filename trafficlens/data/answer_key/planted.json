@@ -1,0 +1,35 @@
+{
+  "dead_end_page": "size_guide",
+  "dead_end_exit": 0.72,
+  "funnel_step": [
+    "shipping",
+    "payment"
+  ],
+  "funnel_continue": 0.3,
+  "loop_pair": [
+    "compare",
+    "product_detail"
+  ],
+  "loop_share": 0.25,
+  "rage_page": "cart",
+  "rage_share": 0.3,
+  "hidden_page": "reviews",
+  "type_gap_page": "payment",
+  "agent_payment_continue": 0.05,
+  "expectation_mismatch": [
+    "promo_ads",
+    "deals"
+  ],
+  "expectation_exit": 0.7,
+  "low_quality_source": "cheap_ads",
+  "spike": {
+    "source": "social_x",
+    "day": 17,
+    "hour": 14,
+    "minutes": 20,
+    "n": 450,
+    "start": "2026-09-24 14:00:00",
+    "end": "2026-09-24 14:20:00"
+  },
+  "note": "HIDDEN ANSWER KEY. Only evaluation/ reads this. Planted problems and which sessions are really bots."
+}
